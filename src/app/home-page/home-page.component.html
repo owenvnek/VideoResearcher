@@ -1,0 +1,37 @@
+<mat-card class="page-content">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Research</mat-card-title>
+            <mat-card-subtitle>Config</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card>
+            <br>
+            Channel ID
+            <br>
+            <input matInput #channel_id class="example-full-width" placeholder="Ex. UCVHFbqXqoYvEWM1Ddxl0QDg" value="">
+            <br>
+            <br>
+            Number of videos to research
+            <br>
+            <input #num_videos matInput class="example-full-width" placeholder="Ex. 3" value="">
+            <br>
+            <br>
+            Questions
+            <div style="float: right; margin-right: 20px;">
+                <button (click)="add_question()"  mat-raised-button color="primary" matRippleColor="white">
+                    Add Question
+                </button>
+            </div>
+            <br>
+            <br>
+            <mat-card>
+                <div #question_series>
+                </div>
+            </mat-card>
+        </mat-card>
+        <br>
+        <button (click)="begin_research()" mat-raised-button color="primary" matRippleColor="white">
+            Begin Research
+        </button>
+    </mat-card>
+</mat-card>

@@ -1,0 +1,16 @@
+.example-full-width {
+    width: 80%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+.page-content {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 20%;
+    color: gray;
+    background-color: lightgray;
+}
